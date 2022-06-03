@@ -1,0 +1,60 @@
+<!-- produzir um sistema de eventos, que contemplem as seguintes características base:
+Cada evento deve conter pelo menos as informações: título, data e local.
+Deve haver uma forma de ver uma lista com todos os eventos.
+Deve haver uma forma de ver dados de um evento específico da lista.
+Deve haver uma forma de criar novos eventos na lista. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+
+		<link rel="stylesheet" href="/style.css" />
+	</head>
+	<body>
+		<div class="cadastro">
+			<form method="post" action>
+				<label>Cadastro Evento</label>
+                <br>
+				<input id="nomeEvento" type="text" name="evento" required />
+                <br>
+				<label>Data de início do evento</label>
+                <br>
+				<input id="dataIni" class="dataini" type="date" required />
+                <!-- <br>
+				<label>Data do fim do evento</label>
+                <br> -->
+				<!-- <input id="dataFim" type="date" required> -->
+                <br>
+				<label>Número de Participantes</label><br>
+				<input id="numPart" type="number" class="participantes" required /><br>
+				<fieldset>
+					<label>Endereço</label>
+                    <br>
+					<input id="rua"type="text" class="rua" required /><br>
+					<label>número</label>
+                    <br>
+					<input id="numeroEnd"type="text" class="número" required />
+					<!-- <label>Cidade</label> -->
+					<!-- <input id="cidade" type="text" class="número" required /> -->
+				</fieldset>
+
+				<!-- <label>Descrição do Evento</label>
+				<textarea id="eventoDesc"rows="5" cols="30"></textarea> -->
+                <button type="button" id="registrar" name="registrar">salvar</button>
+				<!-- <button id='registrar' type="submit" class="" name="registrar" /> -->
+			</form>
+		</div>
+        <p></p>
+        <div id="eventos">
+            
+            
+        </div>
+
+	</body>
+    <script type="text/javascript" src="script.js"></script
+</html>
